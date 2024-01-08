@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="center">
+            <div class="input" id="input">
+                <input type="text" placeholder="Enter Player Name" id="name" class="sty">
+                <select name="rounds" class="sty" id="dropdown">
+                    <option value="5">Choose Rounds</option>
+                    <option value="10">10 Rounds</option>
+                    <option value="15">15 Rounds</option>
+                </select>
+                <button type="submit" id="btn" class="sty">Start</button>                
+            </div>
+            <div class="usrdet hide changeres" id="usrdet">
+                <h4>Player Name:</h4>
+                <h4 id="usrname">UnKnown</h4>
+            </div>
+            <div class="bttns hide" id="bttns">
+                <div class="changeflex">
+                    <img src="./assests/Rock-image.png" alt="Rock Image" class="btnimg" onclick="Rock_solve()">
+                    <label for="rock">Rock</label>
+                </div>
+                <div class="changeflex">
+                    <img src="./assests/Paper-image.png" alt="Paper Image" class="btnimg" onclick="Paper_solve()">
+                    <label for="paper">Paper</label>
+                </div>
+                <div class="changeflex">
+                    <img src="./assests/Scissor-image.png" alt="Scissor Image" class="btnimg" onclick="Scissor_solve()">
+                    <label for="scissor">Scissor</label>
+                </div>
+            </div>
+            <div class="result hide changeres" id="result">
+                <p id="selectdet"></p>
+                <div class="calculations">
+                    <p id="compoint">Computer: <span id="cmpcal">0</span></p>
+                    <p id="usrpoint">Player: <span id="usrcal">0</span></p>
+                    <p id="balance">Balance: <span id="balcal"></span></p>
+                </div>
+            </div>
+            <div class="gifs hide" id="gifs">
+                <img id="gif" alt="GIF" width="200px" height="200px">
+                <p id="res"></p>
+            </div>
+            <div class="oncemore hide" id="oncemore">
+                <h1>Game Ends!!!</h1>
+                <button type="submit" class="more" onclick="tryagain()">Want to Play Again?</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

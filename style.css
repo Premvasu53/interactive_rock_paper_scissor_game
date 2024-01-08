@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    background-color: orange;
+}
+.center{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 30px;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid;
+}
+.bttns{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: yellow;
+}
+.changeflex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+.btnimg{
+    width: 100px;
+    height: 100px;
+}
+.usrdet{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.calculations{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+.gifs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+@media all and (max-width: 375px){
+    .bttns{
+        flex-direction: column;
+        width: 150px;
+    }
+    .changeflex{
+        align-items: center;
+    }
+}
+.sty{
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#name{
+    cursor: text;
+}
+button{
+    background-color: black;
+    color:whitesmoke;
+}
+button:hover{
+    background-color:whitesmoke;
+    color:black;
+}
+.changeres{
+    text-align: center;
+}
+.oncemore{
+    text-align: center;
+}
+.more{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    height: 40px;
+}
