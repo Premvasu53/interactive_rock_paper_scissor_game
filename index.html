@@ -23,17 +23,20 @@
                 <h4 id="usrname">UnKnown</h4>
             </div>
             <div class="bttns hide" id="bttns">
-                <div class="changeflex">
+                <div class="changeflex" id="btn1">
                     <img src="./assests/Rock-image.png" alt="Rock Image" class="btnimg" onclick="Rock_solve()">
                     <label for="rock">Rock</label>
                 </div>
-                <div class="changeflex">
+                <div class="changeflex" id="btn2">
                     <img src="./assests/Paper-image.png" alt="Paper Image" class="btnimg" onclick="Paper_solve()">
                     <label for="paper">Paper</label>
                 </div>
-                <div class="changeflex">
+                <div class="changeflex" id="btn3">
                     <img src="./assests/Scissor-image.png" alt="Scissor Image" class="btnimg" onclick="Scissor_solve()">
                     <label for="scissor">Scissor</label>
+                </div>
+                <div class="gameendshows hide" id="gameendshows">
+                    <h1>Game Ends!!!</h1>
                 </div>
             </div>
             <div class="result hide changeres" id="result">
@@ -49,7 +52,6 @@
                 <p id="res"></p>
             </div>
             <div class="oncemore hide" id="oncemore">
-                <h1>Game Ends!!!</h1>
                 <button type="submit" class="more" onclick="tryagain()">Want to Play Again?</button>
             </div>
         </div>

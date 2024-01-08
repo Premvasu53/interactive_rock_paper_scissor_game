@@ -3,6 +3,10 @@ let bttns = document.getElementById("bttns");
 let result = document.getElementById("result");
 let usrdet = document.getElementById("usrdet");
 let btnId = document.getElementById("btn");
+let gameendshows = document.getElementById("gameendshows");
+let bt1 = document.getElementById("btn1");
+let bt2 = document.getElementById("btn2");
+let bt3 = document.getElementById("btn3");
 let rounds = 0;
 let arr = [1, 2, 3];
 let compoints = 0;
@@ -95,10 +99,14 @@ let oncemore = document.getElementById("oncemore");
 
 function showtry(gameround, rounds) {
     if (gameround == rounds) {
-        bttns.classList.add("hide");
+        bt1.classList.add("hide");
+        bt2.classList.add("hide");
+        bt3.classList.add("hide");
+        gameendshows.classList.remove("hide");
         setTimeout(function(){
             result.classList.add("hide");
             usrdet.classList.add("hide");
+            bttns.classList.add("hide");
             let gifs = document.getElementById("gifs");
             gifs.classList.remove("hide");
             oncemore.classList.remove("hide");
